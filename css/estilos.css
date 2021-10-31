@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: burlywood;
+}
+
+#header {
+    background-color: antiquewhite;
+}
+#main-content {
+    background-color:cadetblue;
+}
+#side-content {
+    background-color: chocolate;
+}
+#xd {
+    background-color:rgb(255, 255, 255);
+    width: 28%;
+}
+#footer {
+    background-color: cornflowerblue;
+}
+#articulo {
+    background-color: lightsalmon;
+}
+table {
+    /* border: 1px solid blue; */
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid gray;
+}
+
+

@@ -1,0 +1,83 @@
+<! Yanet López Rodríguez Grupo: AA ––>
+<html>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <head>
+        <link rel="icon" href="../imagenes/favicon-96x96.png">
+        <br>
+        <div id="header">
+            <ul>
+                <li id="Tim"><a href="../Index.html">Tim Berners-Lee</a></li>
+                <li><a href="../html/portfolio.html">Portfolio</a></li>
+                <li><a href="../html/precios.html">Tabla de Precios</a></li>
+                <li><a href="../html/contactame.html">Contáctame</a></li>
+            </ul> 
+            <div id="xd">
+                <a href="../Index.html"><input type="image" name="cuadrado" onmouseout="this.src='../imagenes/imagen-menu-cuadrado.png'" onmouseover="this.src='../imagenes/imagen-menu-cuadrado-click.png'" src="../imagenes/imagen-menu-cuadrado.png" width="23%" /></a>
+                <a href="../html/portfolio.html"><input type="image" name="circulo" onmouseout="this.src='../imagenes/imagen-menu-circulo.png'" onmouseover="this.src='../imagenes/imagen-menu-circulo-click.png'" src="../imagenes/imagen-menu-circulo.png" width="20%" /></a>
+                <a href="../html/precios.html"><input type="image" name="triangulo" onmouseout="this.src='../imagenes/imagen-menu-triangulo.png'" onmouseover="this.src='../imagenes/imagen-menu-triangulo-click.png'" src="../imagenes/imagen-menu-triangulo.png" width="23%" /></a>
+                <a href="../html/contactame.html"><input type="image" name="rectangulo" onmouseout="this.src='../imagenes/imagen-menu-rectangulo.png'" onmouseover="this.src='../imagenes/imagen-menu-rectangulo-click.png'" src="../imagenes/imagen-menu-rectangulo.png" width="19%" /></a>
+            </div>
+        </div>
+    </head>
+    <body>
+        <div id="main-content">
+            <h1>Contactame.</h1>
+            <h2>Formulario de Contacto.</h2>
+            <form action="../contactar.php" method="post">
+            <fieldset>
+                <legend>Datos personales.</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id = "nombre" name="nombre" placeholder="Introduce tu nombre..." required /> <acronym title="Campo obligatorio">  *   </acronym> 
+                    <br>
+                    <label for="apellido">Apellidos:</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Introduce tus apellidos..." required /> <acronym title="Campo obligatorio">  *   </acronym> 
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" value="" required /> <acronym title="Campo obligatorio">  *   </acronym> 
+                    <br>
+                    <label for="fecha">Fecha de nacimiento:</label>
+                    <input type="date" id="fecha" name="fecha" value=" dd/mm/aaaa " />
+                    <br>
+                    <label for="edad">Edad:</label>
+                    <input type="number" name="edad" id="edad" value=" " min="10" max="100" step="1">
+                    <br>
+                    <label for="sexo">Sexo:</label>
+                    <input type="radio" id="sexo" name="sexo" value="mujer" checked /> Mujer
+                    <input type="radio" id="sexo" name="sexo" value="hombre" /> Hombre
+                    <br>
+                    <label for="pais">País:</label>
+                    <select id="pais" name="pais" size="1">
+                        <option selected="selected">-selecciona-</option>
+                        <option>España</option>
+                        <option>China</option>
+                        <option>Portugal</option>
+                        <option>Francia</option>
+                        <option>Colombia</option>
+                        <option>Venezuela</option>
+                    </select>
+            </fieldset>
+            <fieldset>
+                <legend>Otros datos.</legend>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="Mensaje" cols="50" rows="10" placeholder="Introduce tu mensaje..."></textarea>
+                <br>
+                <label for="foto"></label>
+                Adjunta una foto ... <input type="file" value="Examinar..." name="foto" id="foto" />
+            </fieldset>
+            <input name="condiciones" type="checkbox" value="direccion" required/> He leído las condiciones...
+            <br>
+            <input type="reset" name="limpiar" value="Limpiar." />
+            <input type="submit" name="enviar" value="Enviar" />
+            </form>
+        </div>
+        <br>
+        <div id="side-content">
+            <h1>Centro de referencia.</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14029.259331906114!2d-16.2610171!3d28.4700638!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2049281ffbccc2d1!2sNinfas%20Club%20Tenerife%2C%20Club%20Nocturno%20en%20Tenerife!5e0!3m2!1ses!2ses!4v1635684649987!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <br>
+        <div id="footer">
+            <p>©2040 <a href="../Index.html">www.MiSitio.com</a></p>
+        </div>
+    </body>
+</html>
